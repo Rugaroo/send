@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+
+
+  <title>АРС-Банкрот - банкротство физических лиц</title>
+</head>
+
+<body>
+  <main class="test">
+    <div class="container">
+      <div class="quiz-head">
+
+        <div class="quiz-head-hint">
+          Пройдите тест и узнайте ваш способ списания долгов и сколько это будет стоить
+        </div>
+
+      </div>
+      <div class="quiz">
+
+        <div class="quiz-content">
+
+          <div class="quiz-body">
+            <form class="forms quiz-body-form" action="#" method="post">
+              <fieldset class="form-fieldset" style="display: block;">
+                <div class="quiz-form-number">
+                  Вопрос <span id="quiz-form-number-change"></span> из 6
+                </div>
+                <div class="form-title">Общая сумма вашего долга перед всеми кредиторами?</div>
+                <div class="form-wrap">
+                  <label class="form-label" for="label-choice-first-first">
+                    <input class="form-radio" type="radio" id="label-choice-first-first" name="choice-first"
+                      value="до 300.000 руб.">
+                    <div class="form-answer">
+                      до 300.000 руб.
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-first-two">
+                    <input class="form-radio" type="radio" id="label-choice-first-two" name="choice-first"
+                      value="от 300.000 до 500.000 руб.">
+                    <div class="form-answer">
+                      от 300.000 до 500.000 руб.
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-first-three">
+                    <input class="form-radio" type="radio" id="label-choice-first-three" name="choice-first"
+                      value="от 500.000 до 800.000 руб.">
+                    <div class="form-answer">
+                      от 500.000 до 800.000 руб.
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-first-four">
+                    <input class="form-radio" type="radio" id="label-choice-first-four" name="choice-first"
+                      value="от 800.000 руб.">
+                    <div class="form-answer">
+                      от 800.000 руб.
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-button form-button-indent">
+                  <button class="button-next">Далее</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-fieldset" style="display: none;">
+                <div class="quiz-form-number">
+                  Вопрос <span id="quiz-form-number-change"></span> из 6
+                </div>
+                <div class="form-title">Какое имущество в собственности у вас имеется?</div>
+                <div class="form-wrap">
+                  <label class="form-label" for="label-choice-two-first">
+                    <input class="form-radio" type="radio" id="label-choice-first-first" name="choice-two"
+                      value="Единственное жильё">
+                    <div class="form-answer">
+                      Единственное жильё
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-two-two">
+                    <input class="form-radio" type="radio" id="label-choice-two-two" name="choice-two"
+                      value="Дополнительное жильё">
+                    <div class="form-answer">
+                      Дополнительное жильё
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-two-three">
+                    <input class="form-radio" type="radio" id="label-choice-two-three" name="choice-two"
+                      value="Автомобиль">
+                    <div class="form-answer">
+                      Автомобиль
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-two-four">
+                    <input class="form-radio" type="radio" id="label-choice-two-four" name="choice-two" value="Дача">
+                    <div class="form-answer">
+                      Дача
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-two-five">
+                    <input class="form-radio" type="radio" id="label-choice-two-five" name="choice-two"
+                      value="Ничего нет">
+                    <div class="form-answer">
+                      Ничего нет
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-button form-button-indent">
+                  <button class="button-prev">Назад</button>
+                  <button class="button-next">Далее</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-fieldset" style="display: none;">
+                <div class="quiz-form-number">
+                  Вопрос <span id="quiz-form-number-change"></span> из 6
+                </div>
+                <div class="form-title">Есть ли имущество находящееся в залоге у кредиторов?</div>
+                <div class="form-wrap">
+                  <label class="form-label active-radio" for="label-choice-three-first">
+                    <input class="form-radio" type="radio" id="label-choice-three-first" name="choice-three"
+                      value="Нет">
+                    <div class="form-answer">
+                      Нет
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-three-two">
+                    <input class="form-radio" type="radio" id="label-choice-three-two" name="choice-three"
+                      value="Да, автомобиль куплен в кредит">
+                    <div class="form-answer">
+                      Да, автомобиль куплен в кредит
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-three-three">
+                    <input class="form-radio" type="radio" id="label-choice-three-three" name="choice-three"
+                      value="Да, квартира в ипотеке">
+                    <div class="form-answer">
+                      Да, квартира в ипотеке
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-three-four">
+                    <input class="form-radio" type="radio" id="label-choice-three-four" name="choice-three"
+                      value="Дом, дача, участок в залоге">
+                    <div class="form-answer">
+                      Дом, дача, участок в залоге
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-three-five">
+                    <input class="form-radio" type="radio" id="label-choice-three-five" name="choice-three"
+                      value="Затрудняюсь ответить">
+                    <div class="form-answer">
+                      Затрудняюсь ответить
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-button form-button-indent">
+                  <button class="button-next">Далее</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-fieldset" style="display: none;">
+                <div class="quiz-form-number">
+                  Вопрос <span id="quiz-form-number-change"></span> из 6
+                </div>
+                <div class="form-title">Есть ли у вас официальные источники дохода?</div>
+                <div class="form-wrap">
+                  <label class="form-label active-radio" for="label-choice-four-first">
+                    <input class="form-radio" type="radio" id="label-choice-four-first" name="choice-four"
+                      value="Нет официального дохода">
+                    <div class="form-answer">
+                      Нет официального дохода
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-four-two">
+                    <input class="form-radio" type="radio" id="label-choice-four-two" name="choice-four"
+                      value="от 20.000 руб. до 50.000 руб.">
+                    <div class="form-answer">
+                      от 20.000 руб. до 50.000 руб.
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-four-three">
+                    <input class="form-radio" type="radio" id="label-choice-four-three" name="choice-four"
+                      value="до 20.000 руб.">
+                    <div class="form-answer">
+                      до 20.000 руб.
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-four-four">
+                    <input class="form-radio" type="radio" id="label-choice-four-four" name="choice-four"
+                      value="более 50.000 руб.">
+                    <div class="form-answer">
+                      более 50.000 руб.
+                    </div>
+                  </label>
+
+                </div>
+
+                <div class="form-button form-button-indent">
+                  <button class="button-next">Далее</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-fieldset" style="display: none;">
+                <div class="quiz-form-number">
+                  Вопрос <span id="quiz-form-number-change"></span> из 6
+                </div>
+                <div class="form-title">Совершались ли сделки за последние 1-3 года?</div>
+                <div class="form-wrap">
+                  <label class="form-label active-radio" for="label-choice-five-first">
+                    <input class="form-radio" type="radio" id="label-choice-five-first" name="choice-five"
+                      value="Никаких сделок не совершалось">
+                    <div class="form-answer">
+                      Никаких сделок не совершалось
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-five-two">
+                    <input class="form-radio" type="radio" id="label-choice-five-two" name="choice-five"
+                      value="Заключали договор дарения">
+                    <div class="form-answer">
+                      Заключали договор дарения
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-five-three">
+                    <input class="form-radio" type="radio" id="label-choice-five-three" name="choice-five"
+                      value="Была сделка купли-продажи">
+                    <div class="form-answer">
+                      Была сделка купли-продажи
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-five-four">
+                    <input class="form-radio" type="radio" id="label-choice-five-four" name="choice-five"
+                      value="Расторгали брак">
+                    <div class="form-answer">
+                      Расторгали брак
+                    </div>
+                  </label>
+
+                  <label class="form-label" for="label-choice-five-five">
+                    <input class="form-radio" type="radio" id="label-choice-five-five" name="choice-five"
+                      value="Затрудняюсь ответить">
+                    <div class="form-answer">
+                      Затрудняюсь ответить
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-button form-button-indent">
+                  <button class="button-next">Далее</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-fieldset" style="display: none;">
+                <div class="quiz-form-number">
+                  Вопрос <span id="quiz-form-number-change"></span> из 6
+                </div>
+                <div class="form-title">Есть ли у вас поручители по кредитам и займам?</div>
+                <div class="form-wrap">
+                  <label class="form-label active-radio" for="label-choice-six-first">
+                    <input class="form-radio" type="radio" id="label-choice-six-first" name="choice-six"
+                      value="Да, есть поручители">
+                    <div class="form-answer">
+                      Да, есть поручители
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-six-two">
+                    <input class="form-radio" type="radio" id="label-choice-six-two" name="choice-six"
+                      value="Нет, поручителей нет">
+                    <div class="form-answer">
+                      Нет, поручителей нет
+                    </div>
+                  </label>
+                  <label class="form-label" for="label-choice-six-three">
+                    <input class="form-radio" type="radio" id="label-choice-six-three" name="choice-six"
+                      value="Затрудняюсь ответить">
+                    <div class="form-answer">
+                      Затрудняюсь ответить
+                    </div>
+                  </label>
+
+                </div>
+
+                <div class="form-button form-button-indent">
+                  <button class="button-next">Далее</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-fieldset" style="display: none;">
+                <div class="form-title">Благодарим вас за прохождение опроса!</div>
+                <div class="form-title">Пожалуйста, отправьте контактные данные, чтобы мы определили возможность
+                  списания ваших долгов и его стоимость:</div>
+                <div class="quiz-input-phone">
+                  <input type="text" placeholder="Введите номер телефона *">
+                  <button type="submit" id="quiz-email" name="user_email" class="quiz-form-input">Узнать возможность
+                    списания долгов и стоимость</button>
+                  <label for="quiz-policy">
+                    <input type="checkbox" id="quiz-policy">
+                    <div class="quiz-policy-text">Нажимая на кнопку, вы даёте согласие на обработку ваших персональных
+                      данных и соглашаетесь с политикой конфиденциальности</div>
+                  </label>
+                </div>
+
+              </fieldset>
+
+              <fieldset class="form-fieldset" style="display: none;">
+                <div class="form-title">Спасибо! Ваша заявка получена!</div>
+                <div class="form-title">Наши юристы перезвонят вам в ближайшее время для консультации и уточнения всех
+                  деталей!</div>
+
+              </fieldset>
+
+            </form>
+          </div>
+          <div class="quiz-position"></div>
+        </div>
+
+        <div class="test-card">
+          <div class="test-card-expert">
+            <div class="test-card-img"></div>
+            <div class="test-card-name-description">
+              <div class="test-card-name">Ксения Кирюхина</div>
+              <div class="test-card-position">Юрист “АРС-Банкрот”</div>
+            </div>
+          </div>
+          <div id="test-card-change" class="test-card-text">Размер задолженности напрямую влияет на способ и стоимость
+            процедуры списания долгов</div>
+          <div class="test-card-title">После получения ваших ответов мы</div>
+          <div class="test-card-bg-title">бесплатно :</div>
+
+          <div class="test-card-item">
+            <div class="test-card-item-num">1</div>
+            <div class="test-card-item-text">Составим стратегию полного или частичного списания долгов</div>
+          </div>
+          <div class="test-card-item">
+            <div class="test-card-item-num">2</div>
+            <div class="test-card-item-text">Расскажем как законно защитить своё имущество</div>
+          </div>
+          <div class="test-card-item">
+            <div class="test-card-item-num">3</div>
+            <div class="test-card-item-text">Определим как сохранить залоговое имущество
+              (ипотеку или автомобиль)</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script src="quiz.js"></script>
+</body>
+
+</html>
